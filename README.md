@@ -79,14 +79,15 @@ graph TD
     end
 
     %% Connections
-    PX4 <-->|UDP (uORB)| Agent
-    Cam -->|GZ Topics| GZBridge
-    Agent <-->|DDS (ROS 2 Topics)| Node
-    GZBridge -->|ROS 2 Images| Rviz
+    %% Connections
+    PX4 <-->|"UDP (uORB)"| Agent
+    Cam -->|"GZ Topics"| GZBridge
+    Agent <-->|"DDS (ROS 2 Topics)"| Node
+    GZBridge -->|"ROS 2 Images"| Rviz
 
     %% Specific Topics
-    Node -- Pub: /fmu/in/offboard_control_mode --> Agent
-    Node -- Pub: /fmu/in/trajectory_setpoint --> Agent
-    Node -- Pub: /fmu/in/vehicle_command --> Agent
-    Agent -- Sub: /fmu/out/vehicle_status --> Node
+    Node -- "Pub: /fmu/in/offboard_control_mode" --> Agent
+    Node -- "Pub: /fmu/in/trajectory_setpoint" --> Agent
+    Node -- "Pub: /fmu/in/vehicle_command" --> Agent
+    Agent -- "Sub: /fmu/out/vehicle_status" --> Node
 ```
