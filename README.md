@@ -27,6 +27,8 @@ This workspace is configured for PX4 Autopilot (v1.16.1) simulation with ROS 2 J
   ```bash
   sudo apt install kitty
   ```
+- **Configuration** (Important):
+  Before running, **edit `launch_session.conf`** in the root directory to match your workspace paths. The default configuration assumes your workspace is at `/home/kxd/ws/px4sim_ws`.
 
 ## Setup & Build
 
