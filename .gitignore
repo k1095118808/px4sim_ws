@@ -5,6 +5,7 @@ log/
 
 # PX4 Autopilot (heavy repository)
 PX4-Autopilot/
+QGC/
 
 # Python / IDE
 __pycache__/
