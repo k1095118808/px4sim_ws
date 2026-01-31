@@ -1,69 +1,14 @@
-# ROS2 build and install directories
+# ROS 2 standard ignore
 build/
 install/
 log/
 
-# Colcon specific
-.colcon_cd
-.colcon_build
-.colcon_install
+# PX4 Autopilot (heavy repository)
+PX4-Autopilot/
 
-# Catkin (for ROS1 compatibility or mixed workspaces, though less common in pure ROS2)
-devel/
-# For catkin_make_isolated
-install_isolated/
-devel_isolated/
-
-# CMake generated files
-CMakeCache.txt
-CMakeFiles/
-Makefile
-cmake_install.cmake
-install_manifest.txt
-CTestTestfile.cmake
-
-# Compiled Python files
-*.pyc
+# Python / IDE
 __pycache__/
-
-# C++ object files and libraries
-*.o
-*.so
-*.a
-*.lo
-*.la
-*.gcno
-*.gcda
-*.gcov
-
-# Executables
-*.exe
-*.out
-*.run
-*.app
-
-# Editor/IDE specific files
+*.py[cod]
 .vscode/
 .idea/
 *.swp
-*~
-# Eclipse
-.cproject
-.project
-.pydevproject
-
-# Doxygen documentation
-doxygen/
-
-# ROS bag files
-*.bag
-*.bag.*
-
-# Core dumps
-core.*
-
-# Temporary files
-*.tmp
-
-# Gemini context file
-GEMINI.md
