@@ -19,6 +19,15 @@ This workspace is configured for PX4 Autopilot (v1.16.1) simulation with ROS 2 J
 └── README.md
 ```
 
+## Prerequisites
+- **ROS 2 Jazzy**
+- **PX4 Autopilot** (v1.16.1+)
+- **Kitty Terminal** (Highly Recommended):
+  The `launch_sim` script uses Kitty to create a split-view session, allowing you to see the simulation logs and interact with the PX4 shell simultaneously.
+  ```bash
+  sudo apt install kitty
+  ```
+
 ## Setup & Build
 
 Build the ROS 2 packages (skipping the heavy PX4 firmware):
